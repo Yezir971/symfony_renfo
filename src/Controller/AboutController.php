@@ -15,4 +15,12 @@ final class AboutController extends AbstractController
             'controller_name' => 'AboutController',
         ]);
     }
+    public function parametres(string $paramUrl): Response
+    {
+        return $this->render('about/parametres.html.twig', [
+            'paramUrl' => $paramUrl,
+            'controller_name' => 'AboutController',
+            'methode' => 'GET'
+        ]);
+    }
 }

@@ -13,3 +13,9 @@ app_about:
     path: /about
     controller: App\Controller\AboutController::index
     methods: ['GET']
+# Route pour récupérer les paramètres
+app_parametre:
+    path: /about/parametres/{paramUrl}
+    controller: App\Controller\AboutController::parametres
+    methods: ['GET']
+    
