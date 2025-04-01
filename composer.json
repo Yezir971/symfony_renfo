@@ -94,6 +94,9 @@
         "symfony": {
             "allow-contrib": false,
             "require": "7.2.*"
+        },
+        "runtime": {
+            "dotenv_overload": true
         }
     },
     "require-dev": {
