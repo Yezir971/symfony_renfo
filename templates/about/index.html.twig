@@ -1,10 +1,17 @@
-{% extends 'base.html.twig' %}
+{% extends 'layouts/layout-left-colums.html.twig' %}
 
 {% block title %}Hello AboutController!{% endblock %}
 
-{% block body %}
+{% block contentLeftColumn %}
     
 
-<h1>about</h1>
+<h1 style="background:blue;">about</h1>
+
+{% endblock %}
+
+{% block contentRightColumn %}
+    
+
+<h1 style="background:red;">right</h1>
 
 {% endblock %}
