@@ -8,14 +8,25 @@ app_home:
     path: /
     controller: App\Controller\HomeController::index
     methods: ['GET']
+    # permet de définir un id pour le body
+    defaults:
+        bodyId: 'home'
 # About
 app_about:
     path: /about
     controller: App\Controller\AboutController::index
     methods: ['GET']
+    defaults:
+        bodyId: 'about'
 # Route pour récupérer les paramètres
 app_parametre:
-    path: /about/parametres/{paramUrl}
+    path: /about/parametres/{paramUrl}/{numero}
     controller: App\Controller\AboutController::parametres
     methods: ['GET']
-    
+    # permet de faire su typage 
+    requirements:
+        numero: \d+
+    # permet de definir des valeurs par défaut
+    defaults:
+        numero: 0
+        bodyId: 'parametres'

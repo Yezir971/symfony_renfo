@@ -1,9 +1,12 @@
-{% extends 'base.html.twig' %}
+{% extends 'layouts/layout-fluid.html.twig' %}
 
 {% block title %}Hello HomeController!{% endblock %}
 
-{% block body %}
+{% block contentFluid %}
+<h1 style="background:red;">hello</h1>
 <p>{{ url }}</p>
-
+<a href="{{ link }}">lien</a>
+<br>
+<a href="{{ path('app_about',{'paramUrl':'test','numero':10}) }}">le lien path</a>
 
 {% endblock %}
