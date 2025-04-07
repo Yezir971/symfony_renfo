@@ -30,3 +30,9 @@ app_parametre:
     defaults:
         numero: 0
         bodyId: 'parametres'
+app_task_create:
+    path: /task/create
+    controller: App\Controller\TaskController::create
+    methods: ['GET', 'POST']
+    defaults: 
+        bodyId: create-task

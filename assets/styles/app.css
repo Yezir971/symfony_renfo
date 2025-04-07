@@ -1,18 +1,2 @@
-body {
-    background-color: rgb(18, 133, 66);
-}
-nav{
-    height: 5rem;
-    background-color: brown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import url('components/global.css');
 
-footer{
-    height: 5rem;
-    background-color:blueviolet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

@@ -18,7 +18,7 @@
         {% endblock %}
     </head>
     <!-- facon propre de désactiver turbo -->
-    <body id="{{ bodyId is defined ? bodyId : 'default' }}" data-turbo="{{ turboUx is defined ? turboUx : 'false' }}">
+    <body  id="{{ bodyId is defined ? bodyId : 'default' }}" data-turbo="{{ turboUx is defined ? turboUx : 'false' }}">
         {% block navbar %}
             {{include('fragments/_navbar.html.twig')}}
         {% endblock %}
@@ -30,7 +30,7 @@
         {% block actionBar %}
         
         {% endblock %}
-        <main>
+        <main class="p-3 mb-2 bg-primary text-white">
             {% block body %}
             
             {% endblock %}
